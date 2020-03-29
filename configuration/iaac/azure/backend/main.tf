@@ -24,6 +24,7 @@ resource "azurerm_storage_account" "storage_account" {
   tags = {
     environment = var.environment
   }
+  features = var.features # ENVIRONMENT VARIABLE
 }
 
 resource "azurerm_storage_container" "storage_container" {
