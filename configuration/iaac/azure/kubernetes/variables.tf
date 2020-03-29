@@ -14,8 +14,6 @@ variable node_count {
   default = 2
 }
 
-
-
 variable dns_prefix {
   default = "k8stest"
 }
@@ -26,4 +24,8 @@ variable cluster_name {
 
 variable resource_group {
   default = "kubernetes"
+}
+
+variable features {
+  default = {}
 }
