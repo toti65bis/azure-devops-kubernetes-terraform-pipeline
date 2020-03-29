@@ -14,3 +14,8 @@ variable environment {
 variable location {
     default = "westeurope"
 }
+
+
+variable features {
+    default = {}
+}
