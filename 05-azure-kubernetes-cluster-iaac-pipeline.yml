@@ -1,0 +1,16 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo K8S Terraform Azure!
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'azure_rsa.pub'
+  displayName: 'Run a one-line script'
+
+
+
+
