@@ -34,6 +34,13 @@ resource "azurerm_kubernetes_cluster" "terraform-k8s" {
   }
 }
 
+provider "azurerm" {
+  version = "=2.0.0"
+  features {}
+}
+
+
+
 terraform {
   backend "azurerm" {
     version = "=2.0.0"
