@@ -26,7 +26,6 @@ resource "azurerm_kubernetes_cluster" "terraform-k8s" {
   service_principal {
     client_id     = var.client_id
     client_secret = var.client_secret
-    features = var.features
   }
 
   tags = {
